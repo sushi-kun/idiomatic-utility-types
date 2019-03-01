@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Omit testType<Omit<Props | NewProps, 'age'>>() (type) should match snapshot: Omit testType<Omit<Props | NewProps, 'age'>>() 1`] = `"Pick<Props | NewProps, never>"`;
+
+exports[`Omit testType<Omit<Props, 'age'>>() (type) should match snapshot: Omit testType<Omit<Props, 'age'>>() 1`] = `"Pick<Props, \\"name\\" | \\"visible\\">"`;
