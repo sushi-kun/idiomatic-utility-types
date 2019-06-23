@@ -12,9 +12,11 @@ type MixedProps = { name: string; setName: (name: string) => void };
 type ReadWriteProps = { readonly a: number; b: string };
 
 // @dts-jest:group Omit
-it('Omit', () => {
-  // @dts-jest:pass:snap
-  testType<Omit<Props, 'age'>>();
-  // @dts-jest:pass:snap
-  testType<Omit<Props | NewProps, 'age'>>();
+describe('mapped types', () => {
+  it('Omit', () => {
+    // @dts-jest:pass:snap
+    testType<Omit<Props, 'age'>>();
+    // @dts-jest:pass:snap
+    testType<Omit<Props | NewProps, 'age'>>();
+  });
 });
